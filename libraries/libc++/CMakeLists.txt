@@ -23,7 +23,7 @@ target_include_directories(c++
 target_link_libraries(c++ c)
 
 install(TARGETS c++ EXPORT EosioLib
-   LIBRARY DESTINATION ${CMAKE_INSTALL_FULL_LIBDIR} 
-   ARCHIVE DESTINATION ${CMAKE_INSTALL_FULL_LIBDIR})
+   LIBRARY DESTINATION ./lib 
+   ARCHIVE DESTINATION ./lib)
 
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libcxx/include/ DESTINATION ${CMAKE_INSTALL_FULL_INCLUDEDIR}/libcxx)
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/libcxx/include/ DESTINATION ./include/libcxx)
