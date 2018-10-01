@@ -8,6 +8,8 @@ Running this will scan the directory of the ABI for all rc.md files and add them
 
 The script will also notify the user of any actions that the script cannot find rc.md files for.
 
+You can specify *.md folder with 4th argument, for example: `$ python3 ricardeos.py import /path/to/source-contract.abi /path/to/new-smart-contract-abi.abi /path/to/rc-md-files/`
+
 ## Export Example
 `$ python3 ricardeos.py export /path/to/source-contract.abi`
 
